@@ -20,7 +20,10 @@ def determine_ctcss_dcs(row):
 
 def main():
     # Load the RepeaterBook file
-    repeaterbook_df = pd.read_csv('RepeaterBook 100 mile.csv')
+    repeaterbook_df = pd.read_csv('ReapeterBoook_Export.csv')
+
+  # Print column names to help debug
+    print("Column names in the CSV file:", repeaterbook_df.columns.tolist())
 
     # Create a new DataFrame for the converted data
     converted_data = pd.DataFrame()
